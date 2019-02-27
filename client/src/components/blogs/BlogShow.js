@@ -22,9 +22,7 @@ class BlogShow extends Component {
     );
   }
 }
-
 function mapStateToProps({ blogs }, ownProps) {
   return { blog: blogs[ownProps.match.params._id] };
 }
-
 export default connect(mapStateToProps, { fetchBlog })(BlogShow);
